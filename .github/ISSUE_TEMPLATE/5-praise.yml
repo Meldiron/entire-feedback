@@ -1,0 +1,21 @@
+name: Praise
+description: Things people like
+labels: [praise]
+projects: [Meldiron/2]
+body:
+  - type: markdown
+    attributes:
+      value: "**Title:** what works well in plain words, under 70 characters. **Summary:** one or two sentences. Everything below it is context for agents, so be thorough."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What works well, in one or two sentences.
+      placeholder: Search returns results instantly, even on large projects.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why it matters, what it replaced, what should stay as it is.

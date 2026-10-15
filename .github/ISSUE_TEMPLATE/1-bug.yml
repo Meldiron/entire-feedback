@@ -1,0 +1,42 @@
+name: Bug
+description: Something is broken or behaves unexpectedly
+labels: [bug]
+projects: [Meldiron/2]
+body:
+  - type: markdown
+    attributes:
+      value: "**Title:** the problem in plain words, under 70 characters. **Summary:** one or two sentences. Everything below it is context for agents, so be thorough."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What breaks, in one or two sentences.
+      placeholder: Deleted items stay in the list until the page is reloaded.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Versions, OS, browser, account or project IDs.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Everything an agent needs to act without asking. Logs, screenshots, links, suspected cause, workarounds.

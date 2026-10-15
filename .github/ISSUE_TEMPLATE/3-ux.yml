@@ -1,0 +1,32 @@
+name: UX
+description: Confusing flow, design or copy
+labels: [ux]
+projects: [Meldiron/2]
+body:
+  - type: markdown
+    attributes:
+      value: "**Title:** the problem in plain words, under 70 characters. **Summary:** one or two sentences. Everything below it is context for agents, so be thorough."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is confusing, in one or two sentences.
+      placeholder: The delete button does not say whether the action can be undone.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where
+      description: Page, command or flow.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Everything an agent needs to act without asking. Screenshots, suggested copy or layout, links.

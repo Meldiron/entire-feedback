@@ -1,0 +1,32 @@
+name: Suggestion
+description: Feature request or improvement idea
+labels: [suggestion]
+projects: [Meldiron/2]
+body:
+  - type: markdown
+    attributes:
+      value: "**Title:** what you want in plain words, under 70 characters. **Summary:** one or two sentences. Everything below it is context for agents, so be thorough."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What you want, in one or two sentences.
+      placeholder: Allow filtering the list by date.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is painful or missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Everything an agent needs to act without asking. Use cases, alternatives, examples from other tools, links, screenshots.

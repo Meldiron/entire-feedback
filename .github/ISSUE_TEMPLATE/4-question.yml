@@ -1,0 +1,26 @@
+name: Question
+description: Something unclear that needs an answer
+labels: [question]
+projects: [Meldiron/2]
+body:
+  - type: markdown
+    attributes:
+      value: "**Title:** the question itself, under 70 characters. **Summary:** one or two sentences. Everything below it is context for agents, so be thorough."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: The question, in one or two sentences.
+      placeholder: Is history kept after a project is deleted?
+    validations:
+      required: true
+  - type: textarea
+    id: checked
+    attributes:
+      label: What you checked
+      description: Docs, settings or experiments that did not answer it.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Everything an agent needs to answer without asking. Why it matters, links, screenshots.
